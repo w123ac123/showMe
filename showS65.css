@@ -1,0 +1,196 @@
+html {
+  height: 100%;
+  overflow: hidden;
+}
+
+body {
+  color: #fff;
+  margin:0;
+  padding:0;
+  /*元素的透视距离*/
+  -webkit-perspective: 1px;
+  perspective: 1px;
+  /*设置子元素保留3D位置*/
+  /*-webkit-transform-style: preserve-3d;*/
+  /*transform-style: preserve-3d;*/
+
+  height: 100%;
+  /*内容多余部分上下剪-带滚动*/
+  overflow-y: scroll;
+  /*内容多余部分左右剪-不到滚动*/
+  overflow-x: hidden;
+}
+
+header, header:before {
+  /*把背景图像扩展至足够大，
+  以使背景图像完全覆盖背景区域。
+  百分比是根据内容标签元素大小*/
+  background: 50% 50% / cover;
+}
+header:before {
+  bottom: 0;
+  /*追加content中的内容*/
+  content: "";
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: -2;
+  display: block;
+  background-color: #8a8;
+  background-image: url(img/s65/s65scoket.jpg);
+  background-size: cover;
+  /*-webkit-transform-origin: center center 0;*/
+  /*-webkit-transform: translateZ(-1px) scale(2);*/
+  /*transform-origin: center center 0;*/
+  transform: translateZ(-1px) scale(2);
+  z-index: -1;
+  min-height: 100vh;
+}
+
+header * {
+	/*设置h1字体为标准字体*/
+	font-weight: bold;
+	/*设置字母间距*/
+	letter-spacing: 0.2em;
+	/*把文本排列到中间*/
+	text-align: center;
+}
+header h1{
+  font-size: 3.0em;
+  text-shadow: 2px 2px 2px #333;
+  padding-top: 8em;
+}
+
+.main {
+  padding: 0;
+}
+
+#logo {
+  position: absolute;
+  left: 10px;
+  top: 10px;
+}
+
+#show {
+  padding: 0;
+}
+
+#show #BG{
+  position: absolute;
+}
+
+#title {
+  /*width: 300px;*/
+  background: #333;
+  /*margin-left: 40%;*/
+  z-index: 1000;
+  text-align: center;
+  list-style: none;
+  transform: skew(-20deg, 0deg);
+}
+
+#title2 {
+  position: absolute;
+  /*top: 0%;*/
+  margin-top: 5em;
+  background: #333;
+  /*margin-left: 40%;*/
+  z-index: 1000;
+  text-align: center;
+  list-style: none;
+  transform: skew(-20deg, 0deg);
+}
+
+#tilteTop span {
+  color: #ccc;
+}
+
+#RT {
+  position: absolute;
+  right: 15%;
+  bottom: 20%;
+}
+
+#RT0 {
+  position: absolute;
+  right: 15%;
+  bottom: 19%;
+}
+
+#LT {
+  position: absolute;
+  left: 15%;
+  bottom: 20%;
+}
+
+#LT0 {
+  position: absolute;
+  left: 15%;
+  bottom: 19%;
+}
+
+#fullBox {
+  height: 552px;
+  position: relative;
+  /*margin: 100px auto;*/
+  margin: 0 auto;
+  /*margin-top: 20px;*/
+  overflow: hidden;
+}
+
+#fullBox ul {
+  list-style: none;
+  position: absolute;
+  width: 800%;
+  bottom: 0px;
+  left: -512px;
+}
+
+#fullBox ul li {
+  float: left;
+  /*margin-right: 10px;*/
+}
+
+#fullBox ul li img:hover {
+  transform: matrix(1, 0, 0, 1, 0, -30);
+  transition-delay: 0s;
+  transition-duration: 0.2s;
+  box-shadow: rgba(0, 0, 0, 0.0) 10px 50px 50px 10px;
+}
+
+/*-------------*/
+#fLT {
+  position: absolute;
+  width: 30%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  color: red;
+}
+
+#fRT {
+  position: absolute;
+  width: 30%;
+  height: 100%;
+  right: 0;
+  top: 0;
+  color: red;
+}
+/*---------------*/
+
+#START {
+  width: 80px;
+  height: 45px;
+  background-image: url(img/START.png);
+}
+
+
+#UI {
+  position: absolute;
+  bottom: 0px;
+}
+
+
+
+
+

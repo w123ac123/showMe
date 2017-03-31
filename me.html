@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <!-- 告诉IE切换内核(切换CSS3) -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- viewport(浏览器窗口) -->
+    <!-- content="width=device-width(将浏览器窗口设置为与屏幕尺寸一样) -->
+    <!-- initial-scale=1(设置当前浏览器的初始缩放比例 1 100%) -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+    <title></title>
+
+    <!-- 导入Bootstrap的CSS -->
+    <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+
+    <!-- 如果浏览器小于IE9会自动导入 -->
+    <!--[if lt IE 9]>
+      <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+  <!-- 导入CSS -->
+  <link rel="stylesheet" type="text/css" href="css/me.css">
+
+  </head>
+  <body>
+    
+    <!-- main -->
+    <div class="container-fluid main">
+        <!-- 导航条 -->
+        <div class="navbar navbar-inverse navbar-fixed-top">
+          <div class="container">
+            <div class="navbar-header">
+                <!-- 小屏时按钮 -->
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="http://www.wnekosan.com/index.html"><img id="logo" src="img/logoSP.gif" alt="..." class="img-rounded"></a>
+            </div>
+            <!-- 折叠内容必须包裹在有:navbar-collapse collapse的div中 -->
+            <div class="row">
+              <div class="navbar-collapse collapse col-lg-offset-2 col-md-offset-3 col-sm-offset-4">
+                <ul class="nav navbar-nav">
+                  <li class="active"><a href="me.html">首页</a></li>
+                  <li><a href="#about">News</a></li>
+                  <li><a href="#contact">内容</a></li>
+                  <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">列表 <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                      <li><a href="#">Home</a></li>
+                      <li><a href="#">联系人</a></li>
+                      <li><a href="#">信息</a></li>
+                      <li class="divider"></li>
+                      <li class="dropdown-header">属性</li>
+                      <li><a href="#">关于</a></li>
+                      <li><a href="#">logo帮助</a></li>
+                    </ul>
+                  </li>
+                </ul>
+
+                <ul class="nav navbar-nav navbar-right">
+                  <li>
+                    <a href="map.html" id="START"></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 标题 -->
+        <header>
+            <h1>Mercedes-Benz</h1>
+            <!-- 模态框 -->
+            <button type="button" class="btn btn-danger pull-right" data-toggle="modal" data-target=".bs-example-modal-sm">-登录-</button>
+
+            <div class="modal fade bs-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel">
+              <div class="modal-dialog modal-sm" role="document">
+                <div class="modal-content"  style="color: #333;"> 
+                  <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+                    <h4 class="modal-title" id="myLargeModalLabel">用户登录</h4>
+                  </div>
+                  <div class="modal-body">
+                    <form class="form-horizontal">
+                      <div class="form-group">
+                        <label for="inputEmail3" class="col-sm-2 control-label">Email</label>
+                        <div class="col-sm-10">
+                          <input type="email" class="form-control" id="inputEmail3" placeholder="Email">
+                        </div>
+                      </div>
+                      <div class="form-group">
+                        <label for="inputPassword3" class="col-sm-2 control-label">Password</label>
+                        <div class="col-sm-10">
+                          <input type="password" class="form-control" id="inputPassword3" placeholder="Password">
+                        </div>
+                      </div>
+                      <div class="form-group">
+                        <div class="col-sm-offset-2 col-sm-10">
+                          <div class="checkbox">
+                            <label>
+                              <input type="checkbox"> Remember me
+                            </label>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="form-group">
+                        <div class="col-sm-offset-2 col-sm-10">
+                          <button type="submit" class="btn btn-success">Sign in</button>
+                        </div>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <p>19世纪80年代，德国人卡尔·本茨等人设计出内燃机。这种内燃机使用液体燃料，在汽缸内燃烧。内燃机为动力，本茨在1885年试制汽车成功。</p>
+            <div class="kong"></div>
+        </header>
+
+        <!-- 内容article -->
+        <div id="article">
+          <div class="kong"></div>
+          <div class="page-header">
+            <h2 class=" col-md-offset-1">Personal Homepage<small>Subtext for header</small></h2>
+          </div>
+
+            <div class="mapBox container-fluid">
+                <!--缩略图 i-->
+                <div class="map col-md-4">
+                    <div class="imgBox">
+                        <a href="showS65.html">
+                            <img src="img/GitHub.jpeg">
+                        </a>
+                    </div>
+                    <div class="imgText">
+                        <h3><a href="#">GitHub展示页</a></h3>
+                        <p><a href="#">个人展示页已上传到GitHub</a></p>
+                    </div>
+                </div>
+                <!--缩略图 ii-->
+                <div class="map col-md-4">
+                    <div class="imgBox">
+                        <a href="douban.html">
+                            <img src="img/AngularJS.jpeg">
+                        </a>
+                    </div>
+                    <div class="imgText">
+                        <h3><a href="douban.html">Angular路由做的小deom</a></h3>
+                        <p><a href="douban.html">借助了豆瓣的API</a></p>
+                    </div>
+                </div>
+                <!--缩略图 iii-->
+                <div class="map col-md-4">
+                    <div class="imgBox">
+                        <a href="FF.html">
+                            <img src="img/b3.jpg">
+                        </a>
+                    </div>
+                    <div class="imgText">
+                        <h3><a href="FF.html">个人信息展示</a></h3>
+                        <p>...</p>
+                    </div>
+                </div>
+                <!--缩略图 iv-->
+                <div class="map col-md-4">
+                    <div class="imgBox">
+                        <a href="showS65.html">
+                            <img src="img/b4.jpg">
+                        </a>
+                    </div>
+                    <div class="imgText">
+                        <h3>Thumbnail label</h3>
+                        <p>...</p>
+                    </div>
+                </div>
+                <!--缩略图 v-->
+                <div class="map col-md-4">
+                    <div class="imgBox">
+                        <a href="showS65.html">
+                            <img src="img/b5.jpg">
+                        </a>
+                    </div>
+                    <div class="imgText">
+                        <h3>Thumbnail label</h3>
+                        <p>...</p>
+                    </div>
+                </div>
+                <!--缩略图 vi-->
+                <div class="map col-md-4">
+                    <div class="imgBox">
+                        <a href="showS65.html">
+                            <img src="img/b6.jpg">
+                        </a>
+                    </div>
+                    <div class="imgText">
+                        <h3>Thumbnail label</h3>
+                        <p>...</p>
+                    </div>
+                </div>
+
+            </div>
+
+            </div>
+          </div>
+
+<!-- 模态框 -->
+<!-- <button type="button" class="btn btn-primary" data-toggle="modal" data-target=".bs-example-modal-sm">Small modal</button>
+
+<div class="modal fade bs-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel">
+  <div class="modal-dialog modal-sm" role="document">
+    <div class="modal-content"> 
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+        <h4 class="modal-title" id="myLargeModalLabel">Large modal</h4>
+      </div>
+      <div class="modal-body">
+        ...
+      </div>
+    </div>
+  </div>
+</div> -->
+
+
+    <!-- 导入jQuery的js (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://cdn.bootcss.com/jquery/1.12.4/jquery.min.js"></script>
+    <!-- 导入Bootstrap的js Include all compiled plugins (below), or include individual files as needed -->
+    <script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <!-- 导入transition.js(必须在bootstrap.min.js下面) -->
+    <!--<script src="bootstrap-3.3.0/js/transition.js"></script>-->
+    <!-- 导入滚动监听js -->
+    <!--<script src="bootstrap-3.3.0/js/scrollspy.js"></script>-->
+    <!-- 导入轮播图js -->
+    <!--<script src="bootstrap-3.3.0/js/carousel.js"></script>-->
+    <!--<script type="text/javascript" src="me.js"></script>-->
+    <script src="js/me.js"></script>
+
+  </body>
+</html>

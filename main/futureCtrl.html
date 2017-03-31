@@ -1,0 +1,38 @@
+<div ng-controller="futureCtrl">
+    <div class="page-header">
+        <h1>即将上映的电影</h1>
+    </div>
+    <!--列表组-->
+    <div class="list-group">
+        <a class="list-group-item list-group-item-warning" ng-repeat="x in song" href="#/message/{{x.id}}">
+            <div class="row">
+                <div class="col-sm-1">
+                    <img ng-src={{x.images.small}}>
+                </div>
+                <div class="col-sm-11">
+                    <h3 ng-cloak>{{x.title}}</h3>
+                    <p><span ng-repeat="dir in x.directors" ng-cloak>{{dir.name}}</span></p>
+                    <p ng-cloak>{{x.genres}}</p>
+                </div>
+            </div>
+        </a>
+    </div>
+
+    <div ng-if="!song" style="height: 600px; background: #000;">
+        <div class="col-md-6">
+            <i class="fa fa-spinner fa-pulse fa-5x fa-fw text-primary"></i>
+            <span class="sr-only">Loading...</span>
+            <!--<div class="panel panel-primary">-->
+            <!--<div class="panel-heading">数据正在加载...</div>-->
+            <!--<br>-->
+            <!--<div class="progress">-->
+            <!--<div class="progress-bar progress-bar-striped active" role="progressbar"-->
+            <!--aria-valuenow="100"-->
+            <!--aria-valuemin="0" aria-valuemax="100" style="width: 100%">-->
+            <!--<span class="sr-only"></span>-->
+            <!--</div>-->
+            <!--</div>-->
+            <!--</div>-->
+        </div>
+    </div>
+</div>

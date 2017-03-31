@@ -1,0 +1,96 @@
+* {
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+
+a {
+	text-decoration: none;
+	color: #fff;
+}
+
+a:link{
+	text-decoration:none;
+	color: #fff;
+}
+
+h1 {
+	position: absolute;
+	color: #fff;
+	z-index: 101;
+	margin-top: 150px;
+}
+
+#p1 {
+	position: absolute;
+	z-index: 101;
+	color: #fff;
+	margin-top: 200px;
+
+}
+
+#p2 {
+	position: absolute;
+	z-index: 101;
+	color: #fff;
+	margin-top: 250px;
+
+}
+
+#p3 {
+	position: absolute;
+	z-index: 101;
+	color: #fff;
+	margin-top: 300px;
+
+}
+
+#box img {
+    position: absolute;
+    width: 100%;
+    min-width: 1024px;
+    top: 0%;
+    left: 0px
+}
+
+#car {
+	z-index: 5
+}
+
+#Layer {
+	z-index: 8;
+    opacity: 0;
+}
+
+#toggle {
+	position: absolute;
+	width: 150px;
+	height: 50px;
+	margin-top: 350px;
+	margin-left: 50px;
+	left: 0px;
+	font-size: 20px;
+	background: #000;
+	border:2px solid #fff;
+	z-index: 101;
+}
+
+.HD {
+	color: white;
+	margin-right: 5px;
+}
+
+#logo {
+	display: block;
+	position: absolute;
+	z-index: 101;
+	left: 10px;
+  	top: 10px;
+}
+
+.leftText {
+	margin-left: 100px;
+}
+
+
+

@@ -1,0 +1,48 @@
+<script src="hotCtrl.js"></script>
+<div ng-controller="messageCtrl">
+    <div class="media" style="height: 700px; background: #000;">
+        <div class="media-left">
+            <a href="#">
+                <img class="media-object" ng-src={{song.images.large}} alt="...">
+            </a>
+        </div>
+        <div class="media-body">
+            <h2 class="media-heading" ng-cloak>{{song.title}} {{song.original_title}}<small ng-cloak>({{song.year}})</small></h2>
+            <p ng-cloak ng-repeat="x in song.directors">导演: <a href="#">{{x.name}}</a></p>
+            <p ng-cloak>主演: <a href="#" ng-repeat="m in song.casts">{{m.name}} /</a></p>
+            <br>
+            <p ng-cloak>类型: {{song.genres}}</p>
+            <p ng-cloak">制片国家/地区: <a href="#">{{song.countries[0]}}</a></p>
+            <p ng-cloak>又名: {{song.aka}}</p>
+            <p>豆瓣评分: <span style="font-size: 24px; font-weight: bolder" ng-cloak> {{song.rating.average}}</span></p>
+            <div class="panel panel-success">
+                <div class="panel-heading">
+                    <h3 class="panel-title" ng-cloak>{{song.title}} 的剧情简介 . . . . . .</h3>
+                </div>
+                <div class="panel-body">
+                    <p ng-cloak style="color: #000;">{{song.summary}}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div ng-if="!song" style="height: 600px; background: #000;">
+        <div class="col-md-6">
+            <i class="fa fa-spinner fa-pulse fa-5x fa-fw text-primary"></i>
+            <span class="sr-only">Loading...</span>
+            <!--<div class="panel panel-primary">-->
+            <!--<div class="panel-heading">数据正在加载...</div>-->
+            <!--<br>-->
+            <!--<div class="progress">-->
+            <!--<div class="progress-bar progress-bar-striped active" role="progressbar"-->
+            <!--aria-valuenow="100"-->
+            <!--aria-valuemin="0" aria-valuemax="100" style="width: 100%">-->
+            <!--<span class="sr-only"></span>-->
+            <!--</div>-->
+            <!--</div>-->
+            <!--</div>-->
+        </div>
+    </div>
+
+
+</div>

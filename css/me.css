@@ -1,0 +1,159 @@
+html {
+  height: 100%;
+  overflow: hidden;
+}
+
+body {
+  color: #fff;
+  margin:0;
+  padding:0;
+  /*元素的透视距离*/
+  -webkit-perspective: 1px;
+  perspective: 1px;
+  /*设置子元素保留3D位置*/
+  /*-webkit-transform-style: preserve-3d;*/
+  /*transform-style: preserve-3d;*/
+
+  height: 100%;
+  /*内容多余部分上下剪-带滚动*/
+  overflow-y: scroll;
+  /*内容多余部分左右剪-不到滚动*/
+  overflow-x: hidden;
+}
+
+header, header:before {
+  /*把背景图像扩展至足够大，
+  以使背景图像完全覆盖背景区域。
+  百分比是根据内容标签元素大小*/
+  background: 50% 50% / cover;
+}
+header:before {
+  bottom: 0;
+  /*追加content中的内容*/
+  content: "";
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: -2px;
+  display: block;
+  background-color: #8a8;
+  background-image: url(../img/socket.jpg);
+  background-size: cover;
+  /*-webkit-transform-origin: center center 0;*/
+  /*-webkit-transform: translateZ(-1px) scale(2);*/
+  /*transform-origin: center center 0;*/
+  transform: translateZ(-1px) scale(2);
+  z-index: -1;
+  min-height: 100vh;
+}
+
+header * {
+	/*设置h1字体为标准字体*/
+	font-weight: bold;
+	/*设置字母间距*/
+	letter-spacing: 0.2em;
+	/*把文本排列到中间*/
+	text-align: center;
+}
+header h1{
+  font-size: 3.0em;
+  text-shadow: 2px 2px 2px #333;
+  padding-top: 8em;
+}
+
+header p {
+  background-color: hsla(0, 0%, 100%,0.1);
+  font-size: 18px;
+  margin-top: 3em;
+  padding: 1em;
+}
+
+#article {
+  background-color: rgb(28, 28, 23);
+  margin: 0 auto;
+}
+
+.main {
+  padding: 0;
+}
+
+.kong {
+  width: 100px;
+  height: 50px;
+}
+
+/*.center-block {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}*/
+
+.mapBox {
+    padding: 10px;
+    background: #000;
+}
+
+.map {
+    width: 300px;
+    height:300px;
+    background: #333;
+    margin: 30px 80px;
+    padding: 0;
+}
+
+.imgBox {
+  width: 300px;
+  height: 188px;
+  /*margin: 0 auto;*/
+  padding: 0;
+  margin-right: 5%;
+  overflow: hidden;
+}
+
+.imgBox img {
+  transition: all 0.5s;
+    /*光标变成一只手*/
+  cursor: pointer;
+}
+
+.imgBox img:hover {
+  transform: scale(1.5);
+}
+
+.imgText {
+    text-align: center;
+}
+
+/*#enter {*/
+  /*width: 300px;*/
+  /*height: 50px;*/
+  /*position: absolute;*/
+  /*background-color: rgba(255,255,255,0.5);*/
+  /*right: 0px;*/
+  /*top: 40px;*/
+  /*display: none;*/
+/*}*/
+
+#logo {
+  position: absolute;
+  left: 10px;
+  top: 10px;
+}
+
+#START {
+  width: 80px;
+  height: 45px;
+  /*background-image: url(img/START.png);*/
+}
+
+.imgText a {
+    list-style: none;
+    text-decoration: none;
+    color: #fff;
+}
+
+
+
+
+
+

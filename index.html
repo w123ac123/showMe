@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <!-- 告诉IE切换内核(切换CSS3) -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- viewport(浏览器窗口) -->
+    <!-- content="width=device-width(将浏览器窗口设置为与屏幕尺寸一样) -->
+    <!-- initial-scale=1(设置当前浏览器的初始缩放比例 1 100%) -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+    <title>AMG</title>
+
+    <!-- 导入Bootstrap的CSS -->
+    <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+
+    <!-- 如果浏览器小于IE9会自动导入 -->
+    <!--[if lt IE 9]>
+      <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+  <!-- 导入CSS -->
+  <link rel="stylesheet" type="text/css" href="css/index.css">
+
+  </head>
+  <body>
+
+    <audio src="BGM/BGM01.mp3" autoplay="autoplay" loop="loop" poster=""></audio>
+    <audio id="BGM" src="BGM/GT01.mp3" loop="loop" poster=""></audio>
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-2">
+                <a href="index.html">
+                    <img id="logo" src="img/logoSP.gif" alt="..." class="img-rounded">
+                </a>
+            </div>
+        </div>
+    </div>
+
+    
+    <div id="box">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="page-header leftText">
+                    <h1>进入,我的空间
+                        <small>感受不一样的世界</small>
+                    </h1>
+                    <br>
+                    <p id="p1" class="lead">MERCEDES-AMG GT C ROADSTER</p>
+                    <p id="p2" class="lead">AMG 4.0-LITER V8 BITURBO ENGINE</p>
+                    <p id="p3" class="lead">0-100 KM/H: 3.7 S <br>410 KW (557 HP)</p>
+                    <br>
+                </div>
+            </div>
+        </div>
+
+      <!-- <img id="car" src="carBG.jpg"> -->
+      <img id="car" src="img/carBG.jpg" class="img-responsive" alt="Responsive image">
+      <!-- <img id="Layer" src="Layer.png"> -->
+      <img id="Layer" src="img/Layer.png" class="img-responsive" alt="Responsive image">
+      <button id="toggle" type="button" class="btn btn-default btn-lg">
+        <span class="glyphicon glyphicon-hd-video HD" aria-hidden="true"></span><a href="me.html">前方高能...</a>
+      </button>
+    </div>
+
+
+    <!-- 导入jQuery的js (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://cdn.bootcss.com/jquery/1.12.4/jquery.min.js"></script>
+    <!-- 导入Bootstrap的js Include all compiled plugins (below), or include individual files as needed -->
+    <script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <!-- 导入transition.js(必须在bootstrap.min.js下面) -->
+    <script src="bootstrap-3.3.0/js/transition.js"></script>
+    <!-- 导入滚动监听js -->
+    <script src="bootstrap-3.3.0/js/scrollspy.js"></script>
+    <!-- 导入轮播图js -->
+    <script src="bootstrap-3.3.0/js/carousel.js"></script>
+
+    <script type="text/javascript" src="js/index.js"></script>
+
+  </body>
+</html>

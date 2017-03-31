@@ -1,0 +1,122 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    list-style: none;
+}
+
+.banner {
+    width: 1440px;
+    height: 750px;
+    overflow: hidden;
+    position: relative;
+}
+
+.banner .img {
+    /*height:5400px;*/
+    position:absolute;
+    left:0px;
+    top:0;
+}
+
+.banner .img li {
+    height:1080px;
+}
+
+.banner .img img {
+    width: 1920px;
+    height: 1080px;
+}
+
+.btnDown {
+    position: absolute;
+    z-index: 999;
+    margin-left: 50%;
+    left: -48px;
+    bottom: 0px;
+
+    animation: downUp 0.7s linear infinite alternate;
+    -webkit-animation: downUp 0.7s linear infinite alternate;
+}
+
+@keyframes downUp{
+    0%{ bottom:0px;}
+    100%{ bottom:50px;}
+}
+@-webkit-keyframes downUp{
+    0%{ bottom:0px;}
+    100%{ bottom:50px;}
+}
+
+#showMe {
+    /*background: url("img/bnr_a_realm_reborn.png");*/
+    background: url("../img/show.png");
+    width: 367px;
+    height: 191px;
+    position: absolute;
+    top: 100px;
+    left: 10%;
+    /*margin-left: -520px;*/
+    list-style: none;
+    -webkit-animation: aaa 4.5s ease both;
+}
+
+.meText1 {
+    position: absolute;
+    color: rgb(249, 135, 0);
+    font-size: 14px;
+    top: 82px;
+    left: 70px;
+}
+
+.meText2 {
+    position: absolute;
+    color: rgb(249, 135, 0);
+    font-size: 14px;
+    top: 112px;
+    left: 70px;
+}
+
+.meText3 {
+    position: absolute;
+    color: rgb(249, 135, 0);
+    font-size: 14px;
+    top: 142px;
+    left: 70px;
+}
+
+#showEmail {
+    background: url("../img/show.png");
+    width: 367px;
+    height: 191px;
+    position: absolute;
+    top: 400px;
+    left: 10%;
+    /*margin-left: -520px;*/
+    list-style: none;
+    -webkit-animation: aaa 6.5s ease both;
+}
+
+.skill {
+    background: rgba(255,255,255,0.3);
+    border-radius: 20px;
+    width: 600px;
+    height: 500px;
+    position: absolute;
+    top: 1180px;
+    left: 5%;
+}
+
+.skill h2 {
+    margin: 20px;
+    color: #fff;
+    font-size: 40px;
+}
+
+@-webkit-keyframes aaa {
+    0% {
+        -webkit-transform: scale(0.9) translate(-500px);
+        opacity: 0;
+    }
+}
+
